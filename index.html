@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Poker</h1>
+
+<div class="playingArea">
+	<div class="dealerHidden">
+		<div class="dealerOne">
+			</div>
+		<div class="dealerTwo">
+			</div>
+	</div>	
+	<div class="dealerCards" id="dealerCards" id="dealerCheck">
+	</div>
+
+	<div class="dealerChips">
+		<div class="add5">
+			<img src="chip.png" class="chip">
+		</div>
+		<div class="add10">
+			<img src="chip1.png" class="chip">
+		</div>
+		<div class="add50">
+			<img src="chip2.png" class="chip">
+		</div>
+		<div class="add100">
+			<img src="chip3.png" class="chip">
+		</div>
+		<div class="add500">
+			<img src="chip4.png" class="chip">
+		</div>
+	</div>
+
+	<div id="dealerBalance">Balance: £5000</div>
+	<div id="dealerPot">hello</div>
+
+	<div class="dealerWin">Dealer Wins!</div>
+
+	<div class="tableCards" id="tableCards" id="dealerCheck" id="playerCheck">
+		
+	</div>
+
+	<div id="pot">Pot: £0</div>
+
+
+
+	<div class="playerCards" id="playerCards" id="playerCheck">
+		<div class="playerOne">
+		</div>
+		<div class="playerTwo">
+		</div>
+	</div>
+
+		<div class="playerWin">Player Wins!</div>
+
+	<div class="addBets">
+		<div class="add5">
+			<img src="chip.png" class="chip">
+		</div>
+		<div class="add10">
+			<img src="chip1.png" class="chip">
+		</div>
+		<div class="add50">
+			<img src="chip2.png" class="chip">
+		</div>
+		<div class="add100">
+			<img src="chip3.png" class="chip">
+		</div>
+		<div class="add500">
+			<img src="chip4.png" class="chip">
+		</div>
+	</div>
+
+
+	<div class="buttons">
+		<button class="check" type="button">Check</button>
+		<button class="fold" type="button">Fold</button>
+		<select class="bets">
+		  <option value="choose">Choose your bet</option>
+		  <option value="10">Bet 10</option>
+		  <option value="50">Bet 50</option>
+		  <option value="100">Bet 100</option>
+		  <option value="500">Bet 500</option>
+		  <option value="all">All In</option>
+		</select>
+		<input type="submit" value="Submit" class="betSubmit">
+	</div>
+
+	<div id="balance">Balance: £5000</div>
+	<div id="playerPot">hello</div>
+
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+<script src="../../node_modules/pokersolver/pokersolver.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

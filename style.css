@@ -1,0 +1,255 @@
+h1{
+	text-align: center;
+}
+
+.playingArea{
+	background-image: url(red-background.jpg);
+	display: table; margin: 0 auto; 
+	width: 1000px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-color: black;
+	border-radius: 8px;
+	position: relative;
+}
+
+/* Card positions */
+
+.dealerHidden{
+	margin-left: 7%;
+	margin-top: 5%;
+}
+
+.dealerCards{
+	/*display: none;*/
+	margin-left: 7%;
+	margin-top: 5%;
+}
+
+.playerCards{
+	margin-top: 57%;
+	margin-left: 70%;
+}
+
+.tableCards{
+	margin-top: 31%;
+	margin-left: 245px;
+}
+
+
+/*The poker chip images*/
+.chip{
+	max-height: 80px;
+	max-width: 80px;
+}
+
+.add5,
+.add10,
+.add50,
+.add100,
+.add500{
+	display: inline;
+}
+
+/*Player ui*/
+
+#pot{
+	position: absolute;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+	margin-left: 470px;
+	margin-top: 190px;
+}
+
+#balance{
+	font-size: 20px;
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 122px;
+	color: white;
+	font-family: sans-serif;
+}
+
+#dealerBalance{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-left: 690px;
+	margin-top: 100px;
+}
+
+.playerOne,
+.playerTwo{
+	display: inline;
+}
+
+.addBets{
+	position: absolute;
+	bottom-margin: 5%;
+	right: 53%;
+}
+
+.buttons{
+	position: absolute;
+	margin-top: 122px;
+	margin-left: 50px;
+}
+
+.playerOne{
+	position: absolute;
+	top: 660px;
+	left: 63%;
+}
+
+.playerTwo{
+	position: absolute;
+	top: 660px;
+	left: 68%;
+}
+
+.playerWin{
+	color: white;
+	font-size: 28px;
+	font-family: sans-serif;
+	position: absolute;
+	left: 50%;
+	bottom: 23%;
+	display: none;
+}
+
+#playerPot{
+	color: green;
+	font-size: 18px;
+	font-family: sans-serif;
+	position: absolute;
+	left: 42%;
+	bottom: 8%;
+	display: none;
+}
+
+/*Dealer ui*/
+#dealerPot{
+	color: green;
+	font-size: 18px;
+	font-family: sans-serif;
+	position: absolute;
+	left: 78%;
+	top: 22%;
+	display: none;
+}
+
+.dealerChips{
+	position: absolute;
+	left: 53%;
+}
+
+.dealerWin{
+	color: white;
+	font-size: 28px;
+	font-family: sans-serif;
+	position: absolute;
+	left: 33%;
+	top: 16%;
+	display: none;
+
+}
+
+
+/*card styles*/
+
+.card0, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8
+{
+	border: solid 1px #aaa;
+	border-radius: 9px;
+	width: 95px;
+	height: 150px;
+	float:left;
+	background-color: white;
+	padding: 3px 3px 3px 3px;
+}
+
+.card0 .value, 
+.card1 .value, 
+.card2 .value,
+.card3 .value, 
+.card4 .value, 
+.card5 .value, 
+.card6 .value, 
+.card7 .value, 
+.card8 .value{
+	font-size:15pt;
+	font-family: sans-serif;
+}
+
+.card0 .suit, 
+.card1 .suit, 
+.card2 .suit,
+.card3 .suit, 
+.card4 .suit, 
+.card5 .suit, 
+.card6 .suit, 
+.card7 .suit, 
+.card8 .suit
+{
+	background-image: url('suits.png');
+	height: 100px;
+	width: 90px;
+}
+
+.card0 .d, 
+.card1 .d, 
+.card2 .d,
+.card3 .d, 
+.card4 .d, 
+.card5 .d, 
+.card6 .d, 
+.card7 .d, 
+.card8 .d
+{
+	background-position-y: 100px;
+}
+
+.card0 .h, 
+.card1 .h, 
+.card2 .h,
+.card3 .h, 
+.card4 .h, 
+.card5 .h, 
+.card6 .h, 
+.card7 .h, 
+.card8 .h
+{
+	background-position-x: 90px;
+}
+
+.card0 .c, 
+.card1 .c, 
+.card2 .c,
+.card3 .c, 
+.card4 .c, 
+.card5 .c, 
+.card6 .c, 
+.card7 .c, 
+.card8 .c
+{
+	background-position-x:90px;
+	background-position-y:100px;
+}
+
+/*Hidden card Styles*/
+
+.dealerTwo,
+.dealerOne{
+	border: solid 1px #aaa;
+	border-radius: 9px;
+	width: 95px;
+	height: 150px;
+	float:left;
+	background-color: white;
+	padding: 3px 3px 3px 3px;
+	background-image: url('card back black.png');
+}
