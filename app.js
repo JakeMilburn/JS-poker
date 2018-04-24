@@ -14,9 +14,9 @@
 
 //Generates deck of cards
 
-    var deck = new Array();
-    var suits = ["s", "d", "c", "h"];
-    var values =["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let deck = new Array();
+    const suits = ["s", "d", "c", "h"];
+    const values =["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
     function getDeck(){
         var deck = new Array();
@@ -32,20 +32,20 @@
 
 //Shuffles deck of cards 1000 times
 
-    function shuffle(){
-        for (var i = 0; i < 1000; i++){
-            var location1 = Math.floor((Math.random() * deck.length));
-            var location2 = Math.floor((Math.random() * deck.length));
-            var tmp = deck[location1];
+    const shuffle = () => {
+        for(let i = 0; i < 1000; i++){
+            let location1 = Math.floor((Math.random() * deck.length));
+            let location2 = Math.floor((Math.random() * deck.length));
+            let tmp = deck[location1];
             deck[location1] = deck[location2];
             deck[location2] = tmp;
         }
-    }
+    };
 
-    function removeCardFromDeck() {
-        var card = document.createElement("div");
-        var value = document.createElement("div");
-        var suit = document.createElement("div");
+    const removeCardFromDeck = () => {
+        let card = document.createElement("div");
+        let value = document.createElement("div");
+        let suit = document.createElement("div");
         card.className = "card" + increment;
         increment++;
         value.className = "value";
@@ -57,7 +57,7 @@
         card.setAttribute("data-npm-cardvalue", deck[0].Value + deck[0].Suit);
         deck.splice(0, 1);
         return card;
-    }
+    };
 
 
     function renderDealerHand(){
